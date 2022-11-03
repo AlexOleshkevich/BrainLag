@@ -24,7 +24,7 @@ object ScL {
 
     def tail[A](l: List[A]): List[A] = l match {
       case Nil => Nil
-      case Cons(x, t) => t
+      case Cons(_, t) => t
     }
 
     def setHead[A](l: List[A], v: A): List[A] = l match {
