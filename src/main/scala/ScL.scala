@@ -24,7 +24,6 @@ object ScL {
 
     def tail[A](l: List[A]): List[A] = l match {
       case Nil => Nil
-      case Cons(x, Nil) => Nil
       case Cons(x, t) => t
     }
 
